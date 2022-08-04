@@ -14,12 +14,12 @@ if the user wants to scramble more than one word, the user separate each word wi
 - CSS
 - JAVASCRIPT
 
-### Technologies Learnt
+### Technologies Learnt:
 - Use the match method on a string
 - Designing a toggler input
 - How to get user input 
 - how to write regular expression
 - method that are available for regualr expression like exec, test, search etc
 
-### Link
+### Link:
 The link to the app: https://Scrambled-words.ibrahimo123.repl.co
