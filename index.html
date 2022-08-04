@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Scramble</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>   
+<div class="title" >
+        <h2>Scramble</h2>
+</div>
+<div class="flex-container" >
+<div class="container" >
+  <form id="scrambled" action="" method="post" >
+    <p>
+      <label for="message" >Message:</label>
+      <textarea required cols="20" rows="8" id="message" name="message" class="input-area" placeholder="input your message to be scrambled" ></textarea>
+    </p>
+    <p>
+      <label for="remove" >Remove word(s):</label>
+      <input id="remove" required type="text" class="input" placeholder="word(s) to replace" >
+    </p>
+    <p class="toggle" >
+      <input type="checkbox" name="match_exact_word"  id="exact" >
+      <label class="switch" for="exact" ><small>Exact word(s)</small>
+    </label>
+  </p>
+
+    <p>
+      <label for="replace" >Replace with:</label>
+      <input id="replace" type="text" name="replace" class="input" placeholder="replace word(s) with" >
+      <small style="display:block" >if not specified, the app uses asterisks(i.e ****)</small>
+    </p>
+
+
+    <p>
+      <button class="button" id="submit" type="submit" >Redact Now</button>
+    </p>
+  </form>
+</div>
+<div id="output" class="output" >
+    <h3>Output</h3>
+    <p id="result"></p>
+    <p id="count" ></p>
+
+</div>
+</div>
+<script src="script.js" ></script>
+<footer>
+    <small> Copyright &copy; 2022, Developed and Design by Oliyide Ibrahim Owolabi </small>
+</footer>
+</body>
+</html>

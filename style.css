@@ -1,0 +1,163 @@
+body, html {
+    box-sizing: border-box;
+    background-color: #edd2cb;
+}
+h2 {
+    color:#f55951;
+}
+h3 {
+    color:#f55951;
+    text-decoration: underline;
+}
+
+.flex-container{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content:center
+}
+.container {
+    width: 25vw;
+    margin: 0; 
+    background-color: #361d32;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.3rem 0.3rem #f55951;
+    color:#edd2cb;
+}
+
+.input {
+    color:#edd2cb;
+    width:90%;
+    height: 30px;
+    border:none;
+    border-bottom: 1px solid black;
+    background-color: #361d32;
+}
+
+.input:focus {
+    outline: none;
+    background-color:#361d32;
+}
+
+.input-area {
+    color:#edd2cb;
+    display: block;
+    height: 30vh;
+    width: 90%;
+    background-color: #361d32;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+}
+.input-area:focus {
+    outline: none;
+    background-color: #361d32;
+}
+
+.toggle {
+    margin-top: -.8em;
+    font-size: .9em;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    
+}
+input[type="checkbox"] + label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+ content: "";
+ width: 1.6em;
+ height: .9em;
+ margin-right: .25em;
+ background-color: #edd2cb;
+ border-radius: 1rem;
+ transition: 200ms ease-in-out;
+}
+
+input[type="checkbox"] + label::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "\00D7";
+    font-size: 1.05em;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: #361d32;
+    border-radius: 1rem;
+    transition: 200ms ease-in-out;
+   }
+
+input[type="checkbox"]:checked + label {
+    color: #00FF00;
+}
+
+input[type="checkbox"]:checked + label::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "\2713";
+    color: #edd2cb;
+    transform: translateX(90%);
+    background-color: #00FF00;
+   }
+
+button {
+    cursor: pointer;
+    color: #f55951;
+}
+
+.output {
+    width: 25vw;
+    margin: 1rem; 
+    background-color: #361d32;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.3rem 0.3rem #f55951;
+    color:#edd2cb;
+}
+
+footer {
+    margin-top: 5rem;
+    color: #f55951;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .container {
+      width: 30vw;
+    }
+ }
+
+ @media screen and (max-width: 680px) {
+    .container {
+      width: 60vw;
+    }
+    .output {
+        width: 35vw;
+    }
+    .flex-container {
+        flex-flow: column;
+    }
+ }
+
+ @media screen and (max-width: 650px) {
+    .container {
+      width: 85vw;
+    }
+    .output {
+        width: 70vw;
+    }
+    .flex-container {
+        flex-flow: column;
+    } 
+ }
