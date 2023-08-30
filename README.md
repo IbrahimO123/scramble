@@ -22,4 +22,4 @@ if the user wants to scramble more than one word, the user separate each word wi
 - method that are available for regualr expression like exec, test, search etc
 
 ### Link:
-The link to the app: https://Scrambled-words.ibrahimo123.repl.co
+The link to the app: https://scramblez.vercel.app/
